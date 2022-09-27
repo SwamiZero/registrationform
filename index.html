@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration Form for Colleges</div>
+        <form id="form" action="/" method="GET">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="detail">College Name</span>
+                    <select name="" id="" class="select-options">
+                        <option value="Please College Name">Please select College Name</option>
+                        <option value="">VIT</option>
+                        <option value="">SPIT</option>
+                        <option value="">VJIT</option>
+                        <option value="">RJIT</option>
+                        <option value="">AXSA</option>
+                    </select>
+
+                </div>
+                <div class="input-box">
+                    <span class="detail">Official Contact</span>
+                    <input type="text" placeholder="Contact no." required>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Country</span>
+                    <input type="text" placeholder="India" required>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Pincode</span>
+                    <input type="text" placeholder="Pincode" required>
+                </div>
+                <div class="input-box" id="CollegeType">
+                    <span class="detail">Type of College(*As per University)</span>
+                    
+                   
+                    <select name="" id="collegeType" required>      
+                   <option value="College Type" >Select Type of College</option>
+                   <option value="">1. Autonomous</option>
+                   <option value="">2. Under University</option>
+                   <option value="">3. Private</option>
+                   <option value="">4. Deemed as University</option>
+                   <option value="">5. Government College</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Intakes in Courses</span>
+                    <input type="text" placeholder="Courses" required>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Password (*Institute Provided)</span>
+                    <input type="password"  placeholder="Password" id="password" required>
+                    <input type="checkbox"   onclick="passCheck()" id="check"><p id="checkText">Show Password</p>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Admission Process</span>
+                  
+                    <select name="" id="" class="select-option-mode" required>
+                        <option value="Counselling Mode">Please select Mode</option>
+                        <option value="">ONLINE</option>
+                        <option value="">OFFLINE</option>
+                        
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Official Email-Id</span>
+                    <input type="text" placeholder="Email id" required>
+                </div>
+                <div class="input-box">
+                    <span class="detail">College Course</span>
+                    
+                    <select name="" id="" class="select-options" required>
+                        <option value="Courses">Please select College Courses</option>
+                        <option value="">CSE</option>
+                        <option value="">IT</option>
+                        <option value="">EXTC</option>
+                        <option value="">ETRX</option>
+                        <option value="">BIOM</option>
+                        <option value="">MECH</option>
+                        <option value="">CIVIL</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="detail">State</span>
+                    <input type="text" placeholder="State" required>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Social Media Handles</span>
+                    <input type="text" placeholder="http//......" required>
+                </div>
+                <div class="input-box">
+                    <span class="detail" >Registration No.</span>
+                    <input type="text" placeholder="Registration" id="registration" required>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Images of Institute</span>
+                    <input type="file" id="myFile" name="filename">
+
+                </div>
+                <div class="input-box">
+                    <span class="detail">Fees of Courses</span>
+                   
+                    <select  name="" id="fees" required>
+                        <option value="Fees">Please select Fees Range</option>
+                        <option value="">Less than 50k (Fees<50k)</option>
+                        <option value="">Less than 100k (Fees<100k)</option>
+                        <option value="">Less than 150k (Fees<150k)</option>
+                        <option value="">Less than 200k (Fees<200k)</option>
+                        <option value="">Greater than 200k (Fees>200k)</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="detail">Exam/Counselling Name</span>
+                    <select name="" id="" class="select-option-mode" required>
+                        <option value="Counselling Mode">Please select Exam</option>
+                        <option value="">MHTCET</option>
+                        <option value="">JEE</option>
+                        <option value="">College Entrance</option>
+                        <option value="">Management Quota</option>
+                    </select>
+                </div>
+               
+
+               
+            </div>
+            <div class="button">
+                <!-- <span type="button" class="btn1">EDIT</span> -->
+                <button type="submit" id="submit">Submit</button>
+                <!-- <span type="button" class="btn2">SAVE</span> -->
+            </div>
+          
+        </form>
+    </div>
+    
+</body>
+</html>
